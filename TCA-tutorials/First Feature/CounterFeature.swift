@@ -21,7 +21,7 @@ struct CounterFeature {
     }
 
     var body: some ReducerOf<Self> {
-        Reduce { State, action in
+        Reduce { state, action in
             switch action {
             case .decrementButtonTapped:
                 state.count -= 1
